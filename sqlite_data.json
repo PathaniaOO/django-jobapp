@@ -1,0 +1,1029 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$Xs6IZjJPjgMS6gTHVrKFqm$2uFyuAJ3W3bNGpU1w5q5W6hPps4bzVStTdocv7HG4v0=",
+        "last_login": "2025-07-21T09:41:49.265Z",
+        "is_superuser": true,
+        "username": "ayush",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-06-24T17:20:07.826Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ohkogfma66mwaj5hgw0gusli5uy732zl",
+    "fields": {
+        "session_data": ".eJxVjDsOwyAQBe9CHaHlY1hSpvcZELA4OIlAMnYV5e6xJRdJ-2bmvZkP21r81vPiZ2JXJtjld4shPXM9AD1CvTeeWl2XOfJD4SftfGyUX7fT_TsooZe9thDAkRhQSh0BwWZDahIQtVVIkCOCTkaiAbdDrcwEmE1yZFGgiwP7fAGszTZg:1udn1p:v3cxG9Ak4SZPFg1Hw6KUaX83rD18BnVP6RI2gWPiMYI",
+        "expire_date": "2025-08-04T09:41:49.269Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "vggetl8koh3p6zhhgcf1cjz1o2ovxbx4",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hAoGei4dO8ZyMAMtmpKUtpV490NSRe6_e-9f6hI-zbFvckaZ1ZXZdXld0uUX7J0wE9aHlXnumzrnHRX9EmbvleW9-10_w4malOvDSIP3oKY0ZRgPFrvAqIjLw4smBQ4WJ99GYeBigRgk5OVEYHYAarPF7I0Nvc:1uU7Jm:PU-EywJ90Mfyi-gv8XcSWY9lqyHift2zABJi6nxGQIQ",
+        "expire_date": "2025-07-08T17:20:22.818Z"
+    }
+},
+{
+    "model": "app.skill",
+    "pk": 1,
+    "fields": {
+        "name": "Writing"
+    }
+},
+{
+    "model": "app.skill",
+    "pk": 2,
+    "fields": {
+        "name": "coding"
+    }
+},
+{
+    "model": "app.skill",
+    "pk": 3,
+    "fields": {
+        "name": "Singing"
+    }
+},
+{
+    "model": "app.author",
+    "pk": 4,
+    "fields": {
+        "name": "John carter",
+        "company": "Alphabet Inc",
+        "designation": "Hiring manager"
+    }
+},
+{
+    "model": "app.author",
+    "pk": 5,
+    "fields": {
+        "name": "Serpent healer",
+        "company": "Meta Inc",
+        "designation": "Human manager worker"
+    }
+},
+{
+    "model": "app.author",
+    "pk": 6,
+    "fields": {
+        "name": "Michael Smith",
+        "company": "Netflix Inc",
+        "designation": "worker"
+    }
+},
+{
+    "model": "app.location",
+    "pk": 1,
+    "fields": {
+        "street": "abc",
+        "city": "adelaide",
+        "state": "south australia",
+        "country": "australia",
+        "zip": "560023"
+    }
+},
+{
+    "model": "app.location",
+    "pk": 2,
+    "fields": {
+        "street": "nji",
+        "city": "jaddef",
+        "state": "california",
+        "country": "america",
+        "zip": "560034"
+    }
+},
+{
+    "model": "app.location",
+    "pk": 3,
+    "fields": {
+        "street": "8/3",
+        "city": "gokl",
+        "state": "normandi",
+        "country": "Nigeria",
+        "zip": "9230456"
+    }
+},
+{
+    "model": "app.location",
+    "pk": 4,
+    "fields": {
+        "street": "Jameta",
+        "city": "Palampur",
+        "state": "Himachal Pardesh",
+        "country": "India",
+        "zip": "176031"
+    }
+},
+{
+    "model": "app.location",
+    "pk": 5,
+    "fields": {
+        "street": "3 Right of Store",
+        "city": "Mohali",
+        "state": "Chandigarh",
+        "country": "India",
+        "zip": "115480"
+    }
+},
+{
+    "model": "app.location",
+    "pk": 6,
+    "fields": {
+        "street": "gali no5",
+        "city": "naduan",
+        "state": "Himachal Pardesh",
+        "country": "India",
+        "zip": "560030"
+    }
+},
+{
+    "model": "app.location",
+    "pk": 7,
+    "fields": {
+        "street": "loks",
+        "city": "konsi",
+        "state": "mp",
+        "country": "India",
+        "zip": "560010"
+    }
+},
+{
+    "model": "app.jobpost",
+    "pk": 1,
+    "fields": {
+        "title": "Backend Developer",
+        "description": "A backend developer is responsible for building and maintaining the server-side logic, databases, and APIs that power web and mobile applications. They ensure data flow, application logic, and system integration run smoothly behind the scenes.",
+        "date": "2025-06-21T18:10:09.447Z",
+        "expiry_date": "2025-08-20T13:06:19Z",
+        "salary": 15000,
+        "slug": "Back-end-Developer",
+        "Location": 1,
+        "author": 4,
+        "type": "Full Time",
+        "currency": "USD",
+        "skill": [
+            3
+        ]
+    }
+},
+{
+    "model": "app.jobpost",
+    "pk": 2,
+    "fields": {
+        "title": "Tech Support",
+        "description": "Tech support (technical support) is a job role where you help users solve problems related to software, hardware, or systems. It’s more about supporting users or teams rather than building applications like developers do.",
+        "date": "2025-06-21T18:11:32.378Z",
+        "expiry_date": "2025-10-08T14:07:57Z",
+        "salary": 16000,
+        "slug": "Tech-Support",
+        "Location": 5,
+        "author": 5,
+        "type": "Full Time",
+        "currency": "INR",
+        "skill": [
+            2
+        ]
+    }
+},
+{
+    "model": "app.jobpost",
+    "pk": 3,
+    "fields": {
+        "title": "Data Engineer",
+        "description": "A Data Engineer is responsible for designing, building, and maintaining systems that efficiently process and manage large volumes of structured and unstructured data. They develop data pipelines, transform raw data into usable formats, and support data analytics and business intelligence teams by ensuring data is reliable, accessible, and well-structured.",
+        "date": "2025-06-21T18:30:19.175Z",
+        "expiry_date": "2025-07-18T12:36:21Z",
+        "salary": 5000,
+        "slug": "Data-Engineer",
+        "Location": 4,
+        "author": 5,
+        "type": "Internship",
+        "currency": "INR",
+        "skill": [
+            3
+        ]
+    }
+},
+{
+    "model": "app.jobpost",
+    "pk": 4,
+    "fields": {
+        "title": "Networking EntryLevelRole",
+        "description": "Need to check errors",
+        "date": "2025-06-21T18:48:33.430Z",
+        "expiry_date": "2025-06-10T04:12:38Z",
+        "salary": 1000,
+        "slug": "Networking-ENTRY-level-role",
+        "Location": 7,
+        "author": 4,
+        "type": "Full Time",
+        "currency": "INR",
+        "skill": [
+            3
+        ]
+    }
+},
+{
+    "model": "app.jobpost",
+    "pk": 5,
+    "fields": {
+        "title": "Fifth job post",
+        "description": "Example description",
+        "date": "2025-06-22T19:12:39.628Z",
+        "expiry_date": "2025-06-11T18:15:15Z",
+        "salary": 10000,
+        "slug": "fifth-job-post",
+        "Location": null,
+        "author": 6,
+        "type": "Full Time",
+        "currency": "INR",
+        "skill": []
+    }
+},
+{
+    "model": "app.jobpost",
+    "pk": 9,
+    "fields": {
+        "title": "Sixth job post",
+        "description": "Example 6",
+        "date": "2025-06-24T17:49:48.249Z",
+        "expiry_date": "2025-06-24T18:04:27Z",
+        "salary": 13000,
+        "slug": "Sixth-job-post",
+        "Location": null,
+        "author": 4,
+        "type": "Full Time",
+        "currency": "INR",
+        "skill": []
+    }
+},
+{
+    "model": "app.jobpost",
+    "pk": 10,
+    "fields": {
+        "title": "Seventh job post",
+        "description": "example description seventh",
+        "date": "2025-06-25T17:00:24.272Z",
+        "expiry_date": "2025-06-27T00:00:00Z",
+        "salary": 12000,
+        "slug": "Seventh-job-post",
+        "Location": null,
+        "author": null,
+        "type": "Full Time",
+        "currency": "INR",
+        "skill": []
+    }
+},
+{
+    "model": "app.jobpost",
+    "pk": 12,
+    "fields": {
+        "title": "Eighth job post",
+        "description": "Example description for job post",
+        "date": "2025-06-25T17:32:23.579Z",
+        "expiry_date": null,
+        "salary": 12400,
+        "slug": "eighth-job-post",
+        "Location": null,
+        "author": 4,
+        "type": "Full Time",
+        "currency": "INR",
+        "skill": []
+    }
+},
+{
+    "model": "app.jobpost",
+    "pk": 13,
+    "fields": {
+        "title": "Ninth job post",
+        "description": "Example testing",
+        "date": "2025-06-25T17:49:15.205Z",
+        "expiry_date": null,
+        "salary": 2500,
+        "slug": "ninth-job-post",
+        "Location": null,
+        "author": 4,
+        "type": "Full Time",
+        "currency": "INR",
+        "skill": []
+    }
+},
+{
+    "model": "app.jobpost",
+    "pk": 14,
+    "fields": {
+        "title": "Tenth job post",
+        "description": "Example description",
+        "date": "2025-06-26T13:26:01.344Z",
+        "expiry_date": "2025-06-10T14:23:14Z",
+        "salary": 1100,
+        "slug": "tenth-job-post",
+        "Location": 3,
+        "author": 4,
+        "type": "Full Time",
+        "currency": "INR",
+        "skill": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "subscribe.subscribe",
+    "pk": 1,
+    "fields": {
+        "firstname": "ande",
+        "lastname": "murray",
+        "email": "ande@gmail.com",
+        "option": "W"
+    }
+},
+{
+    "model": "subscribe.subscribe",
+    "pk": 2,
+    "fields": {
+        "firstname": "ande",
+        "lastname": "murray",
+        "email": "ande@gmail.com",
+        "option": "W"
+    }
+},
+{
+    "model": "subscribe.subscribe",
+    "pk": 3,
+    "fields": {
+        "firstname": "jojo",
+        "lastname": "tenenee",
+        "email": "jojo@gmail.com",
+        "option": "W"
+    }
+},
+{
+    "model": "subscribe.subscribe",
+    "pk": 4,
+    "fields": {
+        "firstname": "jojo",
+        "lastname": "tenenee",
+        "email": "jojo@gmail.com",
+        "option": "W"
+    }
+},
+{
+    "model": "subscribe.subscribe",
+    "pk": 5,
+    "fields": {
+        "firstname": "jojo",
+        "lastname": "tenenee",
+        "email": "jojo@gmail.com",
+        "option": "W"
+    }
+},
+{
+    "model": "subscribe.subscribe",
+    "pk": 6,
+    "fields": {
+        "firstname": "jojo",
+        "lastname": "tenenee",
+        "email": "jojo@gmail.com",
+        "option": "W"
+    }
+},
+{
+    "model": "subscribe.subscribe",
+    "pk": 7,
+    "fields": {
+        "firstname": "Andrew",
+        "lastname": "iniesta",
+        "email": "last@gmail.com",
+        "option": "W"
+    }
+},
+{
+    "model": "subscribe.subscribe",
+    "pk": 8,
+    "fields": {
+        "firstname": "Andrew",
+        "lastname": "iniesta",
+        "email": "last@gmail.com",
+        "option": "W"
+    }
+},
+{
+    "model": "subscribe.subscribe",
+    "pk": 9,
+    "fields": {
+        "firstname": "jailer",
+        "lastname": "dani",
+        "email": "dani@gmail.com",
+        "option": "W"
+    }
+},
+{
+    "model": "subscribe.subscribe",
+    "pk": 10,
+    "fields": {
+        "firstname": "jailer",
+        "lastname": "dani",
+        "email": "dani@gmail.com",
+        "option": "W"
+    }
+},
+{
+    "model": "subscribe.subscribe",
+    "pk": 11,
+    "fields": {
+        "firstname": "jailer",
+        "lastname": "dani",
+        "email": "dani@gmail.com",
+        "option": "W"
+    }
+},
+{
+    "model": "subscribe.subscribe",
+    "pk": 12,
+    "fields": {
+        "firstname": "Unknown",
+        "lastname": "koka.",
+        "email": "kajg@gmail.com",
+        "option": "W"
+    }
+},
+{
+    "model": "subscribe.subscribe",
+    "pk": 13,
+    "fields": {
+        "firstname": "andre",
+        "lastname": "koka,",
+        "email": "kajg@gmail.com",
+        "option": "W"
+    }
+},
+{
+    "model": "subscribe.subscribe",
+    "pk": 14,
+    "fields": {
+        "firstname": "Django",
+        "lastname": "last",
+        "email": "last@gmail.com",
+        "option": "W"
+    }
+},
+{
+    "model": "subscribe.subscribe",
+    "pk": 15,
+    "fields": {
+        "firstname": "djangolastproject",
+        "lastname": "lasthahah",
+        "email": "haha@gmail.com",
+        "option": "W"
+    }
+},
+{
+    "model": "subscribe.subscribe",
+    "pk": 16,
+    "fields": {
+        "firstname": "test",
+        "lastname": "nexttest",
+        "email": "ge@mai.com",
+        "option": "M"
+    }
+},
+{
+    "model": "subscribe.subscribe",
+    "pk": 17,
+    "fields": {
+        "firstname": "honda",
+        "lastname": "civic",
+        "email": "honda@gmail.com",
+        "option": "Q"
+    }
+},
+{
+    "model": "subscribe.subscribe",
+    "pk": 18,
+    "fields": {
+        "firstname": "Test",
+        "lastname": "last",
+        "email": "length@gmail.com",
+        "option": "M"
+    }
+},
+{
+    "model": "uploadapp.uploads",
+    "pk": 1,
+    "fields": {
+        "file": "images/ameen-fahmy-mXpTl4jNKiA-unsplash.jpg",
+        "description": "White Flower"
+    }
+},
+{
+    "model": "uploadapp.uploads",
+    "pk": 2,
+    "fields": {
+        "file": "images/ameen-fahmy-mXpTl4jNKiA-unsplash_YQn9qTx.jpg",
+        "description": "White Flower"
+    }
+},
+{
+    "model": "uploadapp.uploads",
+    "pk": 3,
+    "fields": {
+        "file": "images/ameen-fahmy-mXpTl4jNKiA-unsplash_XHgKeyz.jpg",
+        "description": "White Flower"
+    }
+},
+{
+    "model": "uploadapp.uploads",
+    "pk": 4,
+    "fields": {
+        "file": "images/joshua-earle-xEh4hvxRKXM-unsplash.jpg",
+        "description": "Man on ice"
+    }
+},
+{
+    "model": "uploadapp.uploads2",
+    "pk": 1,
+    "fields": {
+        "file": "files/Hello_JpRL27k.txt",
+        "description": "Hello document"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2025-06-24T17:49:48.250Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "jobpost"
+        ],
+        "object_id": "9",
+        "object_repr": "Sixth job post",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2025-06-24T17:49:52.766Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "jobpost"
+        ],
+        "object_id": "9",
+        "object_repr": "Sixth job post",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2025-06-24T18:04:29.493Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "jobpost"
+        ],
+        "object_id": "9",
+        "object_repr": "Sixth job post",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Expiry date\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2025-06-24T18:15:17.136Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "jobpost"
+        ],
+        "object_id": "5",
+        "object_repr": "Fifth job post",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Expiry date\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2025-06-25T17:00:24.273Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "jobpost"
+        ],
+        "object_id": "10",
+        "object_repr": "Seventh job post with salary 12000",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2025-06-25T17:01:38.884Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "jobpost"
+        ],
+        "object_id": "11",
+        "object_repr": "Eighth job post with salary 50000",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2025-06-25T17:02:45.332Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "jobpost"
+        ],
+        "object_id": "11",
+        "object_repr": "Eighth job post with salary 50000",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2025-06-26T14:23:17.926Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "jobpost"
+        ],
+        "object_id": "14",
+        "object_repr": "Tenth job post with salary 1100",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Expiry date\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2025-06-26T16:11:16.323Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "skill"
+        ],
+        "object_id": "3",
+        "object_repr": "Skill object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2025-06-26T16:12:20.980Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "jobpost"
+        ],
+        "object_id": "14",
+        "object_repr": "Tenth job post with salary 1100",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Author\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2025-06-26T16:13:02.217Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "location"
+        ],
+        "object_id": "3",
+        "object_repr": "Location object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2025-06-26T16:13:05.117Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "jobpost"
+        ],
+        "object_id": "14",
+        "object_repr": "Tenth job post with salary 1100",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Location\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2025-06-26T16:13:22.219Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "location"
+        ],
+        "object_id": "3",
+        "object_repr": "Location object (3)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"City\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2025-06-26T16:13:24.376Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "jobpost"
+        ],
+        "object_id": "14",
+        "object_repr": "Tenth job post with salary 1100",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2025-06-27T17:50:45.991Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "subscribe",
+            "subscribe"
+        ],
+        "object_id": "16",
+        "object_repr": "Subscribe object (16)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Option\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2025-06-29T12:35:28.743Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "location"
+        ],
+        "object_id": "4",
+        "object_repr": "Location object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2025-06-29T12:36:49.730Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "jobpost"
+        ],
+        "object_id": "3",
+        "object_repr": "Data Engineer with salary 5000",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Description\", \"Expiry date\", \"Salary\", \"Slug\", \"Location\", \"Author\", \"Skill\", \"Type\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2025-06-29T13:07:00.666Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "jobpost"
+        ],
+        "object_id": "1",
+        "object_repr": "Backend Developer with salary 15000",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Description\", \"Expiry date\", \"Salary\", \"Slug\", \"Currency\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2025-06-29T13:07:07.270Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "jobpost"
+        ],
+        "object_id": "1",
+        "object_repr": "Backend Developer with salary 15000",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Skill\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2025-06-29T14:08:01.232Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "jobpost"
+        ],
+        "object_id": "2",
+        "object_repr": "Tech Support with salary 16000",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Description\", \"Expiry date\", \"Salary\", \"Slug\", \"Author\", \"Skill\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2025-06-29T14:09:08.503Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "location"
+        ],
+        "object_id": "5",
+        "object_repr": "Location object (5)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2025-06-29T14:09:20.617Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "jobpost"
+        ],
+        "object_id": "2",
+        "object_repr": "Tech Support with salary 16000",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Location\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2025-06-30T04:11:32.099Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "location"
+        ],
+        "object_id": "6",
+        "object_repr": "Location object (6)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2025-06-30T04:12:02.297Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "location"
+        ],
+        "object_id": "7",
+        "object_repr": "Location object (7)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2025-06-30T04:12:42.818Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "jobpost"
+        ],
+        "object_id": "4",
+        "object_repr": "Fourth Job Post with salary 1000",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Expiry date\", \"Location\", \"Author\", \"Skill\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2025-06-30T04:13:50.259Z",
+        "user": [
+            "ayush"
+        ],
+        "content_type": [
+            "app",
+            "jobpost"
+        ],
+        "object_id": "4",
+        "object_repr": "Networking EntryLevelRole with salary 1000",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Description\", \"Slug\"]}}]"
+    }
+}
+]

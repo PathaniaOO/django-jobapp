@@ -22,6 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(os.path.join(BASE_DIR, '.env'))
 
 
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
@@ -82,7 +83,7 @@ WSGI_APPLICATION = 'jobapp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False").lower() == "True"
+DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False").strip().lower() == "true"
 
 if DEVELOPMENT_MODE is True:
     DATABASES = {

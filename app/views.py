@@ -25,6 +25,8 @@ class Tempclass:
     x=5
 # def hello_world(request):
 #     return HttpResponse("<h3>Welcome to Jobapp</h3>")
+def home(request):
+    return render(request, 'app/home.html')
 def hello(request):
     #template= loader.get_template('app/hello.html')
     is_authenticated = False  # Simulating an authenticated user; replace with actual authentication check

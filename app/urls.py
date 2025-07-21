@@ -5,7 +5,7 @@ from app import views
 
 urlpatterns = [
     path('', views.job_list,name='job_list'),
-    path('hello/',views.hello, name='hello_world'),
+    path('',views.hello, name='home'),
     #path('job/1',views.details),
     path('job/<int:id>',views.details,name='job_details'),
     #path('job/<str:id>',views.details),
