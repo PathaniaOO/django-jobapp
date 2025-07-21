@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: jobapp
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn jobapp.wsgi:application"
+    envVars:
+      - key: DJANGO_DEBUG
+        value: False
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        fromDatabase:
+          name: jobapp-db
+          property: connectionString
+
+databases:
+  - name: jobapp-db
+    databaseName: jobapp
+    user: postgres
+    password: postgres
+    host: jobapp-db
+    port: 5432
