@@ -15,11 +15,15 @@ import os
 import sys
 import dj_database_url
 from dotenv import load_dotenv
+from django.core.exceptions import ImproperlyConfigured
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 # Load environment variables from .env file
-load_dotenv(os.path.join(BASE_DIR, '.env'))
+env_file = BASE_DIR / ('.env.local' if os.getenv('DJANGO_ENV') != 'production' else '.env.production')
+load_dotenv(env_file)
+
+print(f"DEBUG: Using env file {env_file}")
 
 
 
@@ -33,6 +37,7 @@ SECRET_KEY = os.getenv("SECRET_KEY",get_random_secret_key())
 DEBUG = os.getenv('DJANGO_DEBUG', 'True').lower() == 'true'
 
 ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', '127.0.0.1').split(',')
+
 
 
 # Application definition
@@ -83,22 +88,14 @@ WSGI_APPLICATION = 'jobapp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False").strip().lower() == "true"
 
-if DEVELOPMENT_MODE is True:
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
-        }
-    }
-else:
-    DATABASES = {
-        "default": dj_database_url.config(
-            default=os.environ.get("DATABASE_URL"),
-            conn_max_age=600
-        )
-    }
+db_url = os.getenv("DATABASE_URL")
+if not db_url:
+    raise ImproperlyConfigured("DATABASE_URL environment variable not set.")
+DATABASES = {
+    "default": dj_database_url.parse(db_url, conn_max_age=600),
+}
+
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
 
